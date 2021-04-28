@@ -14,10 +14,10 @@ namespace Arreglo3
         public void quimica()
         {
 
-            CaliQuimica = new float[4];
-            for (int i=0; i<4; i++)
+            CaliQuimica = new float[5];
+            for (int i=0; i<5; i++)
             {
-                Console.WriteLine("Ingrese la calificacion #" + (i + 1) + "de quimica:");
+                Console.WriteLine("Ingrese la calificacion #" + (i + 1) + " de quimica:");
                 String lineaCaptura = Console.ReadLine();
                 CaliQuimica[i] = int.Parse(lineaCaptura);
             }
@@ -28,10 +28,10 @@ namespace Arreglo3
         public void fisica()
         {
 
-            CaliFisica = new float[4];
-            for (int i = 0; i < 4; i++)
+            CaliFisica = new float[5];
+            for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine("Ingrese la calificacion #" + (i + 1) + "de fisica:");
+                Console.WriteLine("Ingrese la calificacion #" + (i + 1) + " de fisica:");
                 String lineaCaptura = Console.ReadLine();
                 CaliFisica[i] = int.Parse(lineaCaptura);
             }
@@ -45,13 +45,13 @@ namespace Arreglo3
             float promQ = 0;
             float promF = 0;
 
-            for(int i=0; i<4; i++)
+            for(int i=0; i<5; i++)
             {
                 PromedioQ = PromedioQ + CaliQuimica[i];
 
             }
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 5; i++)
             {
                 PromedioF = PromedioF + CaliFisica[i];
 
